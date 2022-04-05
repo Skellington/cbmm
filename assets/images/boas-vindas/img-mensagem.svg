@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800" height="345" viewBox="0 0 800 345">
+  <defs>
+    <filter id="Rectangle_524" x="0" y="0" width="800" height="345" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feFlood flood-color="#0064de" flood-opacity="0.451"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_526" data-name="Rectangle 526" width="701" height="236" transform="translate(-0.167 0.144)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Group_293" data-name="Group 293" transform="translate(-547 -2947)">
+    <g transform="matrix(1, 0, 0, 1, 547, 2947)" filter="url(#Rectangle_524)">
+      <rect id="Rectangle_524-2" data-name="Rectangle 524" width="740" height="285" rx="2" transform="translate(30 28)" fill="#fff"/>
+    </g>
+    <g id="Mask_Group_45" data-name="Mask Group 45" transform="translate(595.167 3002.856)" clip-path="url(#clip-path)">
+      <g id="Group_292" data-name="Group 292" transform="translate(-59.577)">
+        <g id="Rectangle_525" data-name="Rectangle 525" transform="translate(402.41 0.144)" fill="#0064de" stroke="#707070" stroke-width="1">
+          <rect width="414" height="316" stroke="none"/>
+          <rect x="0.5" y="0.5" width="413" height="315" fill="none"/>
+        </g>
+        <path id="Path_181" data-name="Path 181" d="M0,0H402.487V316.149H0Z" fill="#0064de" opacity="0.1"/>
+        <text id="Lorem_ipsum_dolor_sit_amet_consetetur_sadipscing_elitr_sed_diam_nonumy_eirmod_tempor" data-name="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor" transform="translate(97.41 80.145)" fill="#393c40" font-size="12" font-family="PPTelegraf-Regular, PP Telegraf" letter-spacing="0.02em"><tspan x="0" y="9">Lorem ipsum dolor sit amet, consetetur </tspan><tspan x="0" y="23">sadipscing elitr, sed diam nonumy eirmod </tspan><tspan x="0" y="37">tempor</tspan></text>
+        <g id="Group_290" data-name="Group 290" transform="translate(85.011 128.38)">
+          <text id="_23_16" data-name="23,16" transform="translate(0.399 55.764)" fill="#0064de" font-size="55" font-family="Druk-WideHeavy, Druk Web" font-weight="800"><tspan x="0" y="0">23,16</tspan></text>
+          <text id="GJ" transform="translate(231.399 56.764)" fill="#0064de" font-size="38" font-family="Druk-Medium, Druk Web" font-weight="500"><tspan x="0" y="0">GJ</tspan></text>
+        </g>
+        <text id="Energia" transform="translate(97.41 64.145)" fill="#0064de" font-size="38" font-family="PPTelegraf-UltraBold, PP Telegraf" font-weight="700"><tspan x="0" y="0">ENERGIA</tspan></text>
+        <g id="MDI_waves" data-name="MDI / waves" transform="translate(426.199 52.299)">
+          <path id="Path_waves" data-name="Path / waves" d="M30.826,16.409h3.2v3.2h-3.2a13.953,13.953,0,0,1-6.406-1.6,13.921,13.921,0,0,1-12.812,0,14,14,0,0,1-6.406,1.6H2v-3.2H5.2a11.163,11.163,0,0,0,6.406-2.13,11.016,11.016,0,0,0,12.812,0,11.163,11.163,0,0,0,6.406,2.13m0-9.609h3.2V10h-3.2A13.953,13.953,0,0,1,24.42,8.4a13.921,13.921,0,0,1-12.812,0A14,14,0,0,1,5.2,10H2V6.8H5.2a11.163,11.163,0,0,0,6.406-2.13,11.016,11.016,0,0,0,12.812,0A11.163,11.163,0,0,0,30.826,6.8m0,19.217h3.2v3.2h-3.2a13.953,13.953,0,0,1-6.406-1.6,13.921,13.921,0,0,1-12.812,0A14,14,0,0,1,5.2,29.22H2v-3.2H5.2a11.163,11.163,0,0,0,6.406-2.13,11.016,11.016,0,0,0,12.812,0A11.163,11.163,0,0,0,30.826,26.017Z" transform="translate(-2 -4.67)" fill="#bfe4ff"/>
+        </g>
+        <line id="Line_10" data-name="Line 10" x1="538.913" transform="translate(120.632 28.414)" fill="none" stroke="#d9d8d7" stroke-width="3" opacity="0.44"/>
+        <g id="Group_291" data-name="Group 291" transform="translate(459.882 84.974) rotate(90)">
+          <path id="Path_62" data-name="Path 62" d="M31.251,84.772,0,43.307,29.025,0,62.657,49.757Z" transform="translate(68.574 0)" fill="#0064de"/>
+          <g id="Group_49" data-name="Group 49" transform="translate(0 29.591)">
+            <path id="Path_60" data-name="Path 60" d="M178.3,26.421H113.614L98.617,0V52.824l-14.885-26.4H8.274L0,58.508H177.145Z" transform="translate(0 0)" fill="#e5effc"/>
+          </g>
+        </g>
+        <text id="Lorem_ipsum_dolor_sit_amet_consetetur_sadipscing_elitr_sed_diam_nonumy_eirmod_tempor-2" data-name="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor" transform="translate(475.41 94.145)" fill="#bfe4ff" font-size="12" font-family="PPTelegraf-Regular, PP Telegraf" letter-spacing="0.02em"><tspan x="0" y="9">Lorem ipsum dolor sit amet, consetetur </tspan><tspan x="0" y="23">sadipscing elitr, sed diam nonumy eirmod </tspan><tspan x="0" y="37">tempor</tspan></text>
+        <g id="Group_289" data-name="Group 289" transform="translate(472.572 129.591)">
+          <text id="_27_4" data-name="27,4" transform="translate(-0.162 70.553)" fill="#bfe4ff" font-size="70" font-family="Druk-WideHeavy, Druk Web" font-weight="800"><tspan x="0" y="0">27,4</tspan></text>
+          <text id="m3" transform="translate(241.838 77.553)" fill="#bfe4ff" font-size="47" font-family="Druk-Medium, Druk Web" font-weight="500"><tspan x="0" y="0">m</tspan><tspan y="0" font-size="27.415" baseline-shift="15.66510009765625">3</tspan></text>
+        </g>
+        <text id="água" transform="translate(475.41 78.145)" fill="#bfe4ff" font-size="38" font-family="PPTelegraf-UltraBold, PP Telegraf" font-weight="700"><tspan x="0" y="0">ÁGUA</tspan></text>
+        <path id="Path_182" data-name="Path 182" d="M-29.366,4.04H11.739l8.108,14.383V-10.352L28.017,4.04H74.884" transform="translate(688.91 24.379)" fill="none" stroke="#d9d8d7" stroke-width="3"/>
+      </g>
+    </g>
+  </g>
+</svg>
