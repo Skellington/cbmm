@@ -1869,6 +1869,9 @@ footer {
     .sec-tecnologia .actions {
 	    margin-bottom: 3rem;
 	}
+    .navegacao-pags.fixa {
+        position: inherit
+    }
 }
 
 @media (max-width: 991px) {
@@ -2052,9 +2055,6 @@ footer {
     }
     .sec-relato h2 {
         font-size: 2rem
-    }
-    .navegacao-pags.fixa {
-        position: inherit
     }
     .nav-princ .items-menu .link-menu-mobile {
         padding: 1rem .5rem 0.45rem 0
