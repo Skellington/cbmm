@@ -119,7 +119,8 @@ a:hover {
 }
 
 .nav-princ header img {
-    width: 75%
+    width: 75%;
+    max-width: 176px;
 }
 
 .nav-princ .menu-hamburguer {
@@ -238,7 +239,7 @@ a:hover {
     height: -moz-fit-content;
     height: fit-content;
     opacity: 0;
-    padding: 1.25rem 2rem 1rem 3rem;
+    padding: 1rem 2rem 1rem 3rem;
     position: fixed;
     -webkit-transition: .3s;
     transition: .3s;
@@ -377,6 +378,7 @@ a:hover {
 }
 
 .nav-princ input {
+	width: 100%;
     border: 1px solid #fff;
     border-radius: 16px;
     background: url("./assets/images/icons/lupa.svg") transparent;
@@ -496,6 +498,11 @@ table .table-light {
     background-color: #A6A7AA
 }
 
+.link-nav-mobile img {
+	display: table;
+	margin: 0 auto;
+}
+
 .banner {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -569,7 +576,7 @@ table .table-light {
 }
 
 .banner.banner-boas-vindas {
-    background: url(./assets/images/boas-vindas/bg-banner.png) 0px 0;
+    background: url(./assets/images/boas-vindas/bg-banner.png) top center;
     background-size: cover;
     background-repeat: no-repeat;
     -webkit-box-pack: center;
@@ -579,7 +586,7 @@ table .table-light {
 }
 
 .banner.banner-inovacao {
-    background: url(./assets/images/inovacao/banner.png) 0px 0;
+    background: url(./assets/images/inovacao/banner.png) top center;
     background-size: cover;
     background-repeat: no-repeat;
     -webkit-box-pack: center;
@@ -589,7 +596,7 @@ table .table-light {
 }
 
 .banner.banner-gestao {
-    background: url(./assets/images/gestao/banner.png) 0px 0;
+    background: url(./assets/images/gestao/banner.png) top center;
     background-size: cover;
     background-repeat: no-repeat;
     -webkit-box-pack: center;
@@ -599,7 +606,7 @@ table .table-light {
 }
 
 .banner.banner-relacionamento {
-    background: url(./assets/images/relacionamento/banner.png) 0px 0px;
+    background: url(./assets/images/relacionamento/banner.png) top center;
     background-size: cover;
     background-repeat: no-repeat;
     -webkit-box-pack: center;
@@ -609,7 +616,7 @@ table .table-light {
 }
 
 .banner.banner-ambiente {
-    background: url(./assets/images/ambiente/banner.png) 0px 0px;
+    background: url(./assets/images/ambiente/banner.png) top center;
     background-size: cover;
     background-repeat: no-repeat;
     -webkit-box-pack: center;
@@ -619,7 +626,7 @@ table .table-light {
 }
 
 .banner.banner-etica {
-    background: url(./assets/images/etica/banner.png) 0px 0px;
+    background: url(./assets/images/etica/banner.png) top center;
     background-size: cover;
     background-repeat: no-repeat;
     -webkit-box-pack: center;
@@ -629,7 +636,7 @@ table .table-light {
 }
 
 .banner.banner-relato {
-    background: url(./assets/images/relato/banner.png) 0px 0px;
+    background: url(./assets/images/relato/banner.png) top center;
     background-size: cover;
     background-repeat: no-repeat;
     -webkit-box-pack: center;
@@ -1706,7 +1713,7 @@ footer {
     .banner.banner-ambiente,
     .banner.banner-etica,
     .banner.banner-relato {
-        background-position: -300px 0
+        background-position: top right
     }
     .sec-gestao,
     .sec-ambiente,
@@ -1722,11 +1729,14 @@ footer {
         height: 85vh;
         padding-bottom: 6rem
     }
+    .nav-princ .items-menu {
+        width: 40%
+    }
 }
 
 @media (max-width: 1024px) {
     .nav-princ .items-menu {
-        width: 40%
+        width: auto
     }
     .sec-inovacao {
         -webkit-box-align: start;
@@ -1795,7 +1805,7 @@ footer {
     .banner.banner-ambiente,
     .banner.banner-etica,
     .banner.banner-relato {
-        background-position: -300px 0
+        background-position: top right
     }
 }
 
@@ -1826,7 +1836,7 @@ footer {
     .banner.banner-ambiente,
     .banner.banner-etica,
     .banner.banner-relato {
-        background-position: -250px 0;
+        background-position: top right;
         background-size: cover;
         height: 30vh
     }
@@ -1844,6 +1854,10 @@ footer {
     header .language,
     header .download  {
     	display: none;
+    }
+    .menu-hamburguer__desc:before,
+    .menu-hamburguer__desc:after {
+    	display: none !important;
     }
 }
 
@@ -1867,7 +1881,6 @@ footer {
     .banner.banner-ambiente,
     .banner.banner-etica,
     .banner.banner-relato {
-        background-position: -440px 0;
         background-size: cover;
         height: 40vh;
         margin-bottom: 2rem
@@ -1920,7 +1933,7 @@ footer {
         font-size: 3rem
     }
     .nav-princ .items-menu {
-        width: 50%
+        width: 100%
     }
     .nav-princ {
         background-color: rgba(0, 0, 0, 0.65)
@@ -1937,6 +1950,9 @@ footer {
     .nav-princ .items-menu {
         width: 95%
     }
+    .nav-princ .menu-hamburguer.ativo {
+	    margin: -4px 0 0 -13px;
+	}
     .nav-princ form {
         display: none
     }
@@ -2038,7 +2054,7 @@ footer {
         position: inherit
     }
     .nav-princ .items-menu .link-menu-mobile {
-        padding: 1.5rem .5rem 0.45rem
+        padding: 1rem .5rem 0.45rem 0
     }
 }
 
