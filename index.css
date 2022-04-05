@@ -172,11 +172,12 @@ a:hover {
 .nav-princ .menu-hamburguer.ativo {
     position: relative;
     width: 1.875rem;
-    z-index: 15
+    z-index: 15;
+    margin: -9px 0 0 -13px;
 }
 
 .nav-princ .menu-hamburguer.ativo .traco {
-    background: rgba(0, 0, 0, 0.4);
+    background: #76777A;
     border-radius: 10px;
     height: 3px;
     margin: 3.75px 0;
@@ -237,12 +238,13 @@ a:hover {
     height: -moz-fit-content;
     height: fit-content;
     opacity: 0;
-    padding: 1.25rem .5rem 1rem 2.5rem;
+    padding: 1.25rem 2rem 1rem 3rem;
     position: fixed;
     -webkit-transition: .3s;
     transition: .3s;
     top: 1%;
     width: 30%;
+    max-width: 410px;
     z-index: 11
 }
 
@@ -252,10 +254,11 @@ a:hover {
 
 .nav-princ .items-menu .link-menu-mobile {
     border-bottom: 1.5px solid rgba(0, 0, 0, 0.25);
-    color: #53575c;
-    font-weight: 500;
+    font-family: 'telegraf-bold';
+    color: #76777A;
+    font-weight: bold;
     margin-bottom: .5rem;
-    padding: 1.25rem .5rem .25rem
+    padding: 1rem .5rem .25rem 0;
 }
 
 .nav-princ .items-menu .link-menu-mobile.blue {
@@ -315,7 +318,8 @@ a:hover {
 }
 
 .nav-princ .items-menu span {
-    color: rgba(0, 0, 0, 0.4);
+    color: #393C40;
+    font-size: 18px;
     padding-left: .5rem
 }
 
@@ -375,14 +379,14 @@ a:hover {
 .nav-princ input {
     border: 1px solid #fff;
     border-radius: 16px;
-    background: url("./assets/images/icons/lupa.png") transparent;
-    background-size: contain;
+    background: url("./assets/images/icons/lupa.svg") transparent;
+    background-size: 20px;
     background-repeat: no-repeat;
-    background-position: 98% 0;
+    background-position: 95% 50%;
     color: #fff;
     margin-right: 1rem;
     min-height: 32px;
-    padding-left: .5rem
+    padding: 3px 40px 0 8px
 }
 
 .navegacao-pags {
@@ -1597,6 +1601,55 @@ main>img {
 
 .sec-relato .cta.gray-cta {
     color: #666668
+}
+
+.menu-hamburguer__desc:hover:before,
+.menu-hamburguer__desc:hover:after {
+	visibility: visible;
+	opacity: 1;
+    -webkit-transition: 0.3s ease-out;
+}
+.menu-hamburguer__desc:before {
+	visibility: hidden;
+	opacity: 0;
+	content: "";
+	position: absolute;
+	top: -7px;
+	left: -15px;
+	width: 360px;
+	height: 35px;
+	background-color: rgba(255, 255, 255, 0.2);
+	border-radius: 18px;
+    -webkit-transition: 0.3s ease-out;
+}
+.menu-hamburguer__desc {
+	position: relative;
+	margin-left: 20px;
+}
+.menu-hamburguer__desc:after {
+	visibility: hidden;
+	opacity: 0;
+	content: "";
+	position: absolute;
+	top: 50%;
+	margin-top: -10px;
+	left: 42px;
+	width: 35px;
+	height: 21px;
+	background-image: url(assets/images/home/logo-nav.svg);
+	background-repeat: no-repeat;
+    -webkit-transition: 0.3s ease-out;
+}
+.menu-hamburguer__desc:hover .ms-lg-4 {
+    margin-left: 55px!important;
+    -webkit-transition: 0.3s ease-out;
+}
+.menu-hamburguer__desc .ms-lg-4 {
+    -webkit-transition: 0.3s ease-out;
+}
+.menu-hamburguer {
+	position: relative;
+	z-index: 10;
 }
 
 footer {
