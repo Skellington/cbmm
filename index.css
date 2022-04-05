@@ -1109,9 +1109,9 @@ main>img {
     -webkit-box-align: end;
     -ms-flex-align: end;
     align-items: flex-end;
-    background: url(./assets/images/home/bg-inovacao.png) -40px -100px, linear-gradient(65deg, #202d22 12%, #515151 30%) 0 0px;
+    background: url(./assets/images/home/bg-inovacao.png) bottom center, linear-gradient(65deg, #202d22 12%, #515151 30%) 0 0px;
     background-repeat: no-repeat;
-    background-size: 105%;
+    background-size: cover;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1150,6 +1150,8 @@ main>img {
     display: flex;
     height: 90vh
 }
+
+
 
 .sec-tecnologia .img-inov {
     -webkit-box-shadow: 0px 0px 16px 6px rgba(0, 0, 0, 0.25);
@@ -1190,12 +1192,12 @@ main>img {
     -webkit-box-align: end;
     -ms-flex-align: end;
     align-items: flex-end;
-    background: url(./assets/images/home/bg-gestao.png), linear-gradient(60deg, #202d22 12%, #515151 30%) 0 0px;
+    background: url(./assets/images/home/bg-gestao.png) top center, linear-gradient(60deg, #202d22 12%, #515151 30%) 0 0px;
     background-size: cover;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 90vh
+    height: 100vh
 }
 
 .sec-gestao h2 {
@@ -1405,7 +1407,7 @@ main>img {
 
 .sec-fornecedores {
     background: url(./assets/images/home/bg-fornecedores.png);
-    background-size: contain;
+    background-size: cover;
     padding: 4rem 0
 }
 
@@ -1434,8 +1436,8 @@ main>img {
     -webkit-box-align: end;
     -ms-flex-align: end;
     align-items: flex-end;
-    background: url(./assets/images/home/bg-ambiente.png) -155px -40px;
-    background-size: 115%;
+    background: url(./assets/images/home/bg-ambiente.png) top center;
+    background-size: cover;
     background-repeat: no-repeat;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1581,13 +1583,15 @@ main>img {
     -webkit-box-align: end;
     -ms-flex-align: end;
     align-items: flex-end;
-    background: url(./assets/images/home/bg-relato.png) -370px 0;
-    background-size: 150%;
+    background: url(./assets/images/home/bg-relato.png) top center;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-color: #FAFAFA;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 100vh
+    height: 100vh;
+    margin-top: 3rem;
 }
 
 .sec-relato * {
@@ -1698,6 +1702,15 @@ footer {
 	}
 }
 
+@media (max-width: 1500px) {
+	.sec-ambiente .actions {
+		margin-bottom: 8rem;
+	}
+	.sec-etica {
+		padding-bottom: 8rem;
+	}
+}
+
 @media (max-width: 1365px) {
 	.caixa-flutuante {
 		left: 10px;
@@ -1718,7 +1731,7 @@ footer {
     .sec-gestao,
     .sec-ambiente,
     .sec-relato {
-        height: 85vh;
+        height: 100vh;
         min-height: unset
     }
     .sec-inovacao,
@@ -1727,7 +1740,6 @@ footer {
     }
     .sec-etica {
         height: 85vh;
-        padding-bottom: 6rem
     }
     .nav-princ .items-menu {
         width: 40%
@@ -1742,7 +1754,7 @@ footer {
         -webkit-box-align: start;
         -ms-flex-align: start;
         align-items: flex-start;
-        height: 75vh;
+        height: auto;
         padding-top: 5rem
     }
     .sec-inovacao h2 {
@@ -1775,20 +1787,15 @@ footer {
         height: 70vh
     }
     .sec-etica h2 {
-        font-size: 3rem
+        font-size: 2rem
     }
     .sec-cultura {
         background: #213769;
         background-repeat: no-repeat
     }
-    .sec-relato {
-        background-size: 145%;
-        background-position: -370px -15px;
-        height: 80vh
-    }
     .sec-ambiente {
-        background: url(./assets/images/home/bg-ambiente.png) -120px -25px;
-        background-size: 130%;
+        background: url(./assets/images/home/bg-ambiente.png) top center;
+        background-size: cover;
         min-height: 45vh;
         padding-bottom: 6rem
     }
@@ -1810,14 +1817,6 @@ footer {
 }
 
 @media (max-width: 1024px) and (min-height: 1366px) {
-    .banner.banner-home,
-    .sec-inovacao,
-    .sec-tecnologia,
-    .sec-gestao,
-    .sec-etica,
-    .sec-relato {
-        height: 35vh
-    }
     .navegacao-pags {
         bottom: 0%
     }
@@ -1859,6 +1858,17 @@ footer {
     .menu-hamburguer__desc:after {
     	display: none !important;
     }
+	.sec-gestao,
+    .sec-ambiente,
+    .sec-relato {
+        height: auto;
+    }
+     .sec-inovacao, .sec-tecnologia, .sec-gestao, .sec-etica, .sec-relato {
+	    height: auto;
+	}
+    .sec-tecnologia .actions {
+	    margin-bottom: 3rem;
+	}
 }
 
 @media (max-width: 991px) {
@@ -1891,10 +1901,6 @@ footer {
     .main-interna .card-interno {
         width: 80%
     }
-    .sec-inovacao {
-        background-size: 140%;
-        height: 50vh
-    }
     .sec-inovacao h2 {
         font-size: 2.5rem
     }
@@ -1916,18 +1922,18 @@ footer {
     .sec-relacionamento .titles-relacionamento {
         height: 60vh
     }
+    .sec-relacionamento .owl-carousel {
+    	margin-bottom: 160px;
+    }
+    .sec-relacionamento h2 {
+    	margin: 0rem 0 1rem;
+    }
     .sec-etica {
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
         height: 45vh;
         padding-bottom: 1rem
-    }
-    .sec-relato {
-        background-position: -300px -15px;
-        background-size: 170%;
-        background-repeat: no-repeat;
-        height: 45vh
     }
     .sec-relato h2 {
         font-size: 3rem
@@ -1938,12 +1944,18 @@ footer {
     .nav-princ {
         background-color: rgba(0, 0, 0, 0.65)
     }
+    .sec-relacionamento h3 {
+    	margin-top: 3rem;
+    }
 }
 
 @media (max-width: 640px) {
     .nav-princ form  {
     	display: none;
     }
+    .sec-ambiente .actions {
+	    margin-bottom: 6rem;
+	}
 }
 
 @media (max-width: 428px) {
@@ -1983,11 +1995,6 @@ footer {
     .main-interna .card-interno {
         width: 100%
     }
-    .sec-inovacao {
-        background-size: 318%;
-        height: 70vh;
-        background: url(./assets/images/home/bg-inovacao.png) -1301px -794px, linear-gradient(65deg, #202d22 12%, #515151 30%) 0 0px
-    }
     .sec-tecnologia {
         height: 80vh
     }
@@ -2021,12 +2028,8 @@ footer {
         margin-bottom: 1rem
     }
     .sec-ambiente {
-        background: url(./assets/images/home/bg-ambiente.png) -263px -65px;
-        background-size: 250%;
-        min-height: 45vh;
-        height: unset;
-        padding-bottom: 6rem;
-        background-repeat: no-repeat
+        min-height: 430px;
+        padding-bottom: 0;
     }
     .sec-ambiente h2 {
         font-size: 2rem
@@ -2056,6 +2059,9 @@ footer {
     .nav-princ .items-menu .link-menu-mobile {
         padding: 1rem .5rem 0.45rem 0
     }
+    footer {
+	    padding: 2rem 0;
+	}
 }
 
 @media (min-width: 1500px) {
@@ -2074,11 +2080,12 @@ footer {
         height: 110vh
     }
     .sec-ambiente {
-        background: url(./assets/images/home/bg-ambiente.png) -225px -40px;
-        background-size: 115%;
+        background: url(./assets/images/home/bg-ambiente.png) top center;
+        background-size: cover;
         background-repeat: no-repeat;
         padding-top: 0rem;
-        padding-bottom: 10rem
+        padding-bottom: 10rem;
+        height: 100vh;
     }
     .sec-etica {
         padding-bottom: 12rem
@@ -2129,9 +2136,6 @@ footer {
 @media (max-width: 320px) {
 	.sec-relacionamento {
 	    background-size: 320%;
-	}
-	.sec-ambiente {
-		background-size: 325%;
 	}
 	.sec-bio .card-ambiente {
 		background-size: 160%;
