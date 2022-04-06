@@ -1714,6 +1714,12 @@ footer {
     background: #FAFAFA;
     padding: 6rem 0
 }
+footer a {
+    display: block;
+    color: #213769;
+    font-size: 12px;
+    margin-top: 15px;
+}
 
 .modal {
     display: none;
