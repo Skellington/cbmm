@@ -219,6 +219,19 @@
         </div>
       </div>
     </section>
+
+    <div class="modal fade" tabindex="-1" role="dialog" id="open_video">
+      <button type="button" class="modal-close" data-dismiss="modal"></button>
+      <div class="modal-dialog modal-dialog-centered modal-video" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <video width="100%" height="auto" controls>
+              <source src="assets/videos/videoplayback.mp4" type="video/mp4">Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
     
     <section class="sec-tecnologia">
       <div class="container">
@@ -235,11 +248,8 @@
           </div>
           <div class="col-md-12 col-lg-6 col-xl-6">
             <div class="img-inov">
-              <img src="./assets/images/home/img-destaque-home.jpg">
+              <a data-toggle="modal" data-target="#open_video"><img src="./assets/images/home/img-destaque-home.jpg"></a>
             </div>
-            <!-- <video width="100%" height="auto" controls>
-              <source src="assets/videos/videoplayback.mp4" type="video/mp4">Your browser does not support the video tag.
-            </video> -->
           </div>
         </div>
       </div>
@@ -456,6 +466,9 @@
       </div>
     </div>
   </footer>
+
+  <script src="assets/js/jquery-1.12.0.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   <script src="assets/js/plugins.js"></script>
