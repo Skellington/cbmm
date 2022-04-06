@@ -551,6 +551,8 @@ table .table-light {
 }
 
 .banner h1 {
+    position: relative;
+    z-index: 2;
     font-family: 'telegraf-bold';
     font-size: 4rem;
     font-weight: 700;
@@ -585,11 +587,11 @@ table .table-light {
 	z-index: 1;
 	bottom: 0;
 	left: 0;
-	width: 100%;
+	width: 52%;
 	height: 100vh;
 	background-image: url(./assets/images/home/faixa-banner.png);
 	background-repeat: no-repeat;
-	background-position: bottom left;
+	background-position: bottom right;
 	background-size: auto 100%;
 }
 
@@ -684,6 +686,103 @@ table .table-light {
     justify-content: center;
     height: 70vh
 }
+.detail-banner {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 30%;
+}
+.detail-banner img {
+    max-width: 100%;
+    width: 100%;
+}
+.banner-relato .detail-banner {
+    top: 60px;
+}
+@media (max-width: 1920px) { 
+    .banner-relacionamento .detail-banner {
+        width: 32%;
+    }
+    .banner-relato .detail-banner {
+        top: 0;
+    }
+}
+@media (max-width: 1680px) { 
+    .banner-etica .detail-banner {
+        width: 38%;
+    }
+    .banner-relato .detail-banner {
+        top: 60px;
+    }
+}
+@media (max-width: 1440px) { 
+    .detail-banner {
+        width: 32%;
+    }
+    .banner-etica .detail-banner {
+        width: 43%;
+    }
+}
+@media (max-width: 1366px) { 
+    .detail-banner,
+    .banner-relacionamento .detail-banner {
+        width: 34%;
+    }
+    .banner-etica .detail-banner {
+        width: 44%;
+    }
+}
+@media (max-width: 1280px) { 
+    .detail-banner,
+    .banner-relacionamento .detail-banner {
+        width: 36%;
+    }
+    .banner-etica .detail-banner {
+        width: 48%;
+    }
+}
+@media (max-width: 1024px) { 
+    .detail-banner {
+        width: 42%;
+    }
+    .banner-relacionamento .detail-banner {
+        width: 46%;
+    }
+    .banner-etica .detail-banner {
+        width: 60%;
+    }
+}
+
+.banner-boas-vindas h1,
+.banner-boas-vindas h1 span {
+    color: #DEEDFF;
+}
+.banner-ambiente h1,
+.banner-ambiente h1 span {
+    color: #FFF9D9;
+}
+.banner-inovacao h1,
+.banner-inovacao h1 span {
+    color: #F2FFF5;
+}
+.banner-relacionamento h1,
+.banner-relacionamento h1 span {
+    color: #FFEFD9;
+}
+.banner-gestao h1,
+.banner-gestao h1 span {
+    color: #F3F2FF;
+}
+.banner-etica h1,
+.banner-etica h1 span {
+    color: #D9D8D7
+}
+.banner-relato h1,
+.banner-relato h1 span {
+    color: #D9D8D7
+}
+
 
 main section {
     padding: 2rem 0
@@ -741,8 +840,10 @@ main>img {
     font-size: inherit
 }
 
-.main-interna p {
-    line-height: 1.3
+.main-interna p,
+.main-interna li {
+    color: #76777A;
+    line-height: 24px
 }
 
 .main-interna .card-interno {
@@ -1714,11 +1815,16 @@ footer {
     background: #FAFAFA;
     padding: 6rem 0
 }
-footer a {
+a.link-footer {
     display: block;
     color: #213769;
     font-size: 12px;
     margin-top: 15px;
+}
+a.link-footer-page {
+    position: absolute;
+    bottom: 19px;
+    left: 15px;
 }
 
 .modal {
@@ -1902,6 +2008,12 @@ footer a {
 	}
 }
 
+@media (max-width: 1366px) {
+    .banner.banner-home:before {
+        width: 61%;
+    }
+}
+
 @media (max-width: 1365px) {
 	.caixa-flutuante {
 		left: 10px;
@@ -1940,6 +2052,9 @@ footer a {
 @media (max-width: 1024px) {
     .nav-princ .items-menu {
         width: auto
+    }    
+    .banner.banner-home:before {
+        width: 61%;
     }
     .sec-inovacao {
         -webkit-box-align: start;
@@ -2041,6 +2156,9 @@ footer a {
     .sec-ambiente {
         min-height: 95vh
     }
+    .detail-banner {
+        display: none;
+    }
     header .language,
     header .download,
     header .pesquisa-e-mais-menu  {
@@ -2069,10 +2187,6 @@ footer a {
 	}
     .navegacao-pags.fixa {
         position: inherit
-    }
-    .banner.banner-home:before {
-    	left: -40%;
-    	background-position: bottom right;
     }
     .banner.banner-home {
 	    padding-bottom: 41px;
@@ -2156,11 +2270,10 @@ footer a {
     	margin-top: 3rem;
     }
     .banner__content {
-	    width: 80%;
+	    width: 40%;
 	}
     .banner.banner-home:before {
-    	left: -20%;
-    	background-position: bottom right;
+        width: 67%;
     }
 }
 
@@ -2203,6 +2316,12 @@ footer a {
         background-size: cover;
         height: 60vh;
         margin-bottom: 0
+    }
+    .banner__content {
+        width: 60%;
+    }
+    .banner.banner-home:before {
+        width: 100%;
     }
     .owl-carousel-main.owl-loaded .card {
         min-height: 450px
@@ -2356,4 +2475,7 @@ footer a {
 	    background: url(./assets/images/home/bg-relato.png) -440px 0 no-repeat;
 	    background-size: 370%;
 	}
+    .banner__content {
+        width: 80%;
+    }
 }

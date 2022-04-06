@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1043.41" height="1039.416" viewBox="0 0 1043.41 1039.416">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.679" y1="0.29" x2="1.054" y2="0.764" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#cebc52"/>
+      <stop offset="1" stop-color="#b39a36"/>
+    </linearGradient>
+    <filter id="Subtração_22" x="0" y="0" width="1043.41" height="1039.416" filterUnits="userSpaceOnUse">
+      <feOffset dx="5" dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feFlood flood-color="#918d18" flood-opacity="0.749"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Subtração_22)">
+    <path id="Subtração_22-2" data-name="Subtração 22" d="M368.021,712.988H0V493.632H358.766c3.051.2,6.165.309,9.255.309,75.671,0,137.233-61.658,137.233-137.446S443.692,219.049,368.021,219.049c-2.558,0-5.145.071-7.689.212H0V0H368.021a357.982,357.982,0,0,1,71.723,7.242A353.652,353.652,0,0,1,567,60.884a356.849,356.849,0,0,1-60.451,624.089,353.716,353.716,0,0,1-66.8,20.773A357.984,357.984,0,0,1,368.021,712.988Z" transform="translate(381.49 27) rotate(30)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>
