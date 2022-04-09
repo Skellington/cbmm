@@ -90,3 +90,16 @@ $('.caixa-flutuante a[href^="#"]').on('click', function(e) {
     }, 500);
   });
  });
+
+
+$(document).ready(function(){
+    $("#open_info").click(function () {
+      if ($(".infograficos").hasClass("expanded")) {
+        $(".infograficos").removeClass("expanded");
+        $(this).removeClass("active");
+      } else {
+        $(".infograficos").addClass("expanded");
+        $(this).addClass("active");
+      }
+  });
+});
