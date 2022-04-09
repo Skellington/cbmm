@@ -533,6 +533,7 @@ table .table-light {
     top: -500px;
     left: 0;
     -webkit-transition: 0.3s ease-out;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
 }
 .infograficos.expanded {
     top: 0;
