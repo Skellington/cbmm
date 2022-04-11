@@ -659,7 +659,7 @@ table .table-light {
 }
 
 .banner.banner-inovacao {
-    background: url(./assets/images/inovacao/banner.png) top center;
+    background: url(./assets/images/inovacao/banner.jpg) top center;
     background-size: cover;
     background-repeat: no-repeat;
     -webkit-box-pack: center;
@@ -1219,19 +1219,19 @@ main>img {
 }
 
 .sec-carousel .card-1 {
-    background-image: url(./assets/images/home/card-temas-rel-1.png)
+    background-image: url(./assets/images/home/card-temas-rel-1.jpg)
 }
 
 .sec-carousel .card-2 {
-    background-image: url(./assets/images/home/card-temas-rel-2.png)
+    background-image: url(./assets/images/home/card-temas-rel-2.jpg)
 }
 
 .sec-carousel .card-3 {
-    background-image: url(./assets/images/home/card-temas-rel-3.png)
+    background-image: url(./assets/images/home/card-temas-rel-3.jpg)
 }
 
 .sec-carousel .card-4 {
-    background-image: url(./assets/images/home/card-temas-rel-4.png)
+    background-image: url(./assets/images/home/card-temas-rel-4.jpg)
 }
 
 .sec-carousel .card-5 {
