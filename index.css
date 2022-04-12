@@ -543,8 +543,10 @@ table .table-light {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 0;
 }
 .infograficos__content ul li {
+    width: 20%;
     padding-right: 15px;
     list-style: none;
 }
