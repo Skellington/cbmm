@@ -380,6 +380,10 @@ a:hover {
     width: 33px
 }
 
+.nav-princ .pesquisa-e-mais-menu a.download {
+    margin-left: 20px;
+}
+
 .nav-princ .language {
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -550,6 +554,7 @@ table .table-light {
     align-items: center;
     justify-content: space-between;
     margin: 0;
+    padding: 0;
 }
 .infograficos__content ul li {
     width: 20%;
@@ -2313,6 +2318,9 @@ a.link-footer-page {
 	}
     .banner.banner-home:before {
         width: 67%;
+    }
+    #open_info {
+        display: none;
     }
 }
 
