@@ -36,10 +36,12 @@ document.querySelector(".nav-princ") && (ativaMenu = function() {
         a = document.querySelector(".caixa-flutuante"),
         e = e.getBoundingClientRect().top;
     e < 260 ? (a.classList.add("fixa"), t.classList.add("fixa")) : 100 < e && (a.classList.remove("fixa"), t.classList.remove("fixa"))
-}), window.addEventListener("scroll", ativaItemFlutuante)), $(".owl-carousel-main").owlCarousel({
+}), window.addEventListener("scroll", ativaItemFlutuante)), 
+    $(".owl-carousel-main").owlCarousel({
     loop: !1,
-    margin: 24,
+    margin: 18,
     nav: !1,
+    stagePadding: 8,
     responsive: {
         0: {
             dots: !0,
@@ -51,7 +53,11 @@ document.querySelector(".nav-princ") && (ativaMenu = function() {
         1e3: {
             dots: !1,
             items: 4
-        }
+        },
+        1024: {
+            dots: !1,
+            items: 5
+        },
     }
 }), $(".owl-carousel-relat").owlCarousel({
     loop: !1,
