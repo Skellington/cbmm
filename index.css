@@ -354,6 +354,12 @@ a:hover {
     display: flex
 }
 
+.nav-princ #open_info span {
+    color: #fff;
+    font-family: 'telegraf-bold';
+    margin: 0 .5rem
+}
+
 .nav-princ .pesquisa-e-mais-menu {
     display: -webkit-box;
     display: -ms-flexbox;
