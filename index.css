@@ -681,8 +681,18 @@ table .table-light {
     height: 70vh
 }
 
+.banner.banner-mensagem {
+    background: url(./assets/images/inovacao/banner-mensagem.png) top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 70vh
+}
+
 .banner.banner-gestao {
-    background: url(./assets/images/gestao/banner.png) top center;
+    background: url(./assets/images/gestao/banner.jpg) top center;
     background-size: cover;
     background-repeat: no-repeat;
     -webkit-box-pack: center;
@@ -692,7 +702,7 @@ table .table-light {
 }
 
 .banner.banner-relacionamento {
-    background: url(./assets/images/relacionamento/banner.png) top center;
+    background: url(./assets/images/relacionamento/banner.jpg) top center;
     background-size: cover;
     background-repeat: no-repeat;
     -webkit-box-pack: center;
@@ -807,7 +817,9 @@ table .table-light {
     color: #FFF9D9;
 }
 .banner-inovacao h1,
-.banner-inovacao h1 span {
+.banner-inovacao h1 span,
+.banner-mensagem h1,
+.banner-mensagem h1 span {
     color: #F2FFF5;
 }
 .banner-relacionamento h1,
@@ -1232,7 +1244,7 @@ main>img {
 }
 
 .sec-carousel .card-1 {
-    background-image: url(./assets/images/home/card-temas-rel-1.jpg)
+    background-image: url(./assets/images/home/card-temas-rel-6.jpg)
 }
 
 .sec-carousel .card-2 {
@@ -1294,7 +1306,7 @@ main>img {
     -webkit-box-align: end;
     -ms-flex-align: end;
     align-items: flex-end;
-    background: url(./assets/images/home/bg-inovacao.png) bottom center, linear-gradient(65deg, #202d22 12%, #515151 30%) 0 0px;
+    background: url(./assets/images/home/bg-inovacao.jpg) bottom center, linear-gradient(65deg, #202d22 12%, #515151 30%) 0 0px;
     background-repeat: no-repeat;
     background-size: cover;
     display: -webkit-box;
@@ -2068,6 +2080,7 @@ a.link-footer-page {
 @media (max-width: 1320px) {
     .banner.banner-boas-vindas,
     .banner.banner-inovacao,
+    .banner.banner-mensagem,
     .banner.banner-relacionamento,
     .banner.banner-gestao,
     .banner.banner-ambiente,
@@ -2080,10 +2093,6 @@ a.link-footer-page {
     .sec-relato {
         height: 100vh;
         min-height: unset
-    }
-    .sec-inovacao,
-    .sec-tecnologia {
-        height: 75vh
     }
     .sec-etica {
         height: 85vh;
@@ -2157,6 +2166,7 @@ a.link-footer-page {
     }
     .banner.banner-boas-vindas,
     .banner.banner-inovacao,
+    .banner.banner-mensagem,
     .banner.banner-relacionamento,
     .banner.banner-gestao,
     .banner.banner-ambiente,
@@ -2180,6 +2190,7 @@ a.link-footer-page {
     }
     .banner.banner-boas-vindas,
     .banner.banner-inovacao,
+    .banner.banner-mensagem,
     .banner.banner-relacionamento,
     .banner.banner-gestao,
     .banner.banner-ambiente,
@@ -2252,6 +2263,7 @@ a.link-footer-page {
     }
     .banner.banner-boas-vindas,
     .banner.banner-inovacao,
+    .banner.banner-mensagem,
     .banner.banner-relacionamento,
     .banner.banner-gestao,
     .banner.banner-ambiente,
@@ -2354,6 +2366,7 @@ a.link-footer-page {
     }
     .banner.banner-boas-vindas,
     .banner.banner-inovacao,
+    .banner.banner-mensagem,
     .banner.banner-relacionamento,
     .banner.banner-gestao,
     .banner.banner-ambiente,
@@ -2365,19 +2378,16 @@ a.link-footer-page {
         margin-bottom: 0
     }
     .banner__content {
-        width: 60%;
+        width: 70%;
     }
     .banner.banner-home:before {
         width: 100%;
     }
     .owl-carousel-main.owl-loaded .card {
-        min-height: 450px
+        min-height: 300px
     }
     .main-interna .card-interno {
         width: 100%
-    }
-    .sec-tecnologia {
-        height: 80vh
     }
     .sec-gestao {
         background: url(./assets/images/home/bg-gestao.png) -200px 0, linear-gradient(60deg, #202d22 12%, #515151 30%) 0 0px;
@@ -2472,9 +2482,6 @@ a.link-footer-page {
         height: 80vh;
         padding-bottom: 8rem
     }
-    .sec-inovacao {
-        height: 90vh
-    }
     .sec-gestao {
         padding-bottom: 4rem
     }
@@ -2493,6 +2500,7 @@ a.link-footer-page {
     .banner.banner-boas-vindas,
     .banner.banner-gestao,
     .banner.banner-inovacao,
+    .banner.banner-mensagem,
     .banner.banner-relacionamento,
     .banner.banner-ambiente,
     .banner.banner-etica,
