@@ -1244,7 +1244,8 @@ main>img {
 }
 
 .sec-carousel .card-1 {
-    background-image: url(./assets/images/home/card-temas-rel-6.jpg)
+    background-image: url(./assets/images/home/card-temas-rel-6.jpg);
+    background-position: center;
 }
 
 .sec-carousel .card-2 {
@@ -1865,6 +1866,101 @@ main>img {
 .menu-hamburguer {
 	position: relative;
 	z-index: 10;
+}
+
+.card-box {
+    position: relative;
+    width: 580px;
+    height: auto;
+    padding: 92px 70px 40px;
+    clip-path: polygon(0% 0%,100% 0%,100% 0%,100% 90%,96% 100%,4% 100%,0% 91%,0% 11%);
+
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+    margin-top: -57px;
+}
+.card-box:first-child {
+    z-index: 1;
+    margin-top: 0;
+    padding: 40px 70px 40px;
+    clip-path: polygon(5% 0%,96% 0%,100% 9%,100% 90%,96% 100%,4% 100%,0% 91%,0% 11%);
+}
+.color-1 {
+    background-color: #163c6e;
+}
+.color-2 {
+    background-color: #7796cd;
+}
+.card-box h3 {
+    color: #7796cd;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.main-interna.main-interna-inovacao .card-box.color-2 h3,
+.card-box.color-2 h3,
+.color-2 .card-box__content__info h4,
+.color-2 .card-box__content__info h4 span {
+    color: #163c6e;
+}
+.list-icon {
+    background-image: url(assets/images/icons/list-blue-light.png);
+    background-size: 13px;
+    background-repeat: no-repeat;
+    padding-left: 25px;
+}
+.color-2 .list-icon {
+    background-image: url(assets/images/icons/list-blue-dark.png);
+}
+.main-interna.main-interna-inovacao .card-box h3 {
+    color: #7796cd;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+.card-box img {
+    width: 110px;
+    margin-right: 35px;
+}
+.card-box__content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.card-box__content__info h4 {
+    font-family: 'telegraf-bold';
+    color: #7796cd;
+    font-size: 82px;
+    line-height: 70px;
+    font-weight: 900;
+    margin: 0;
+}
+.card-box__content__info h4 span {
+    font-family: 'Oswald', sans-serif;
+    color: #7796cd;
+    font-size: 36px;
+    line-height: 70px;
+    font-weight: 600;
+    margin: 0;
+}
+.card-box__content__info p {
+    color: #fff;
+    font-size: 24px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+.card-box small {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+.cards-box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
 footer {
