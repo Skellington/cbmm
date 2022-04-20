@@ -2543,6 +2543,27 @@ a.link-footer-page {
     .nav-princ .items-menu .link-menu-mobile {
         padding: 1rem .5rem 0.45rem 0
     }
+    .card-box {
+        width: 100%;
+        padding: 92px 30px 30px
+    }
+    .card-box:first-child {
+        padding: 30px 30px 30px;
+    }
+    .card-box__content__info p {
+        font-size: 15px;
+        line-height: 18px;
+    }
+    .card-box__content {
+        flex-direction: column;
+    }
+    .card-box__content img {
+        width: 50px;
+        margin-bottom: 30px;
+    }
+    .card-box__content__info h4 {
+        font-size: 52px;
+    }
     footer {
 	    padding: 2rem 0;
 	}
