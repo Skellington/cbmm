@@ -2152,6 +2152,9 @@ a.link-footer-page {
 	.sec-etica {
 		padding-bottom: 8rem;
 	}
+    .detail-banner {
+        left: -100px;
+    }
 }
 
 @media (max-width: 1440px) {
