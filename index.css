@@ -1307,7 +1307,7 @@ main>img {
     -webkit-box-align: end;
     -ms-flex-align: end;
     align-items: flex-end;
-    background: url(./assets/images/home/bg-inovacao.jpg) bottom center, linear-gradient(65deg, #202d22 12%, #515151 30%) 0 0px;
+    background: url(./assets/images/home/bg-inovacao.png) bottom center, linear-gradient(65deg, #202d22 12%, #515151 30%) 0 0px;
     background-repeat: no-repeat;
     background-size: cover;
     display: -webkit-box;
@@ -2599,7 +2599,7 @@ a.link-footer-page {
         background: url(./assets/images/home/bg-relato.png) -525px 0;
         background-size: 150%;
         background-repeat: no-repeat;
-        height: 80vh;
+        height: 100vh;
         padding-bottom: 8rem
     }
     .sec-gestao {
