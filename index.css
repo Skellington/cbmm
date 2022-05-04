@@ -672,7 +672,7 @@ table .table-light {
 }
 
 .banner.banner-inovacao {
-    background: url(./assets/images/inovacao/banner.jpg) top center;
+    background: url(./assets/images/inovacao/banner.png) top center;
     background-size: cover;
     background-repeat: no-repeat;
     -webkit-box-pack: center;
@@ -692,7 +692,7 @@ table .table-light {
 }
 
 .banner.banner-gestao {
-    background: url(./assets/images/gestao/banner.jpg) top center;
+    background: url(./assets/images/gestao/banner.png) top center;
     background-size: cover;
     background-repeat: no-repeat;
     -webkit-box-pack: center;
@@ -702,7 +702,7 @@ table .table-light {
 }
 
 .banner.banner-relacionamento {
-    background: url(./assets/images/relacionamento/banner.jpg) top center;
+    background: url(./assets/images/relacionamento/banner.png) top center;
     background-size: cover;
     background-repeat: no-repeat;
     -webkit-box-pack: center;
@@ -1542,6 +1542,7 @@ main>img {
 }
 
 .sec-relacionamento p {
+    color: #fff;
     font-size: 1.25rem
 }
 
@@ -1585,15 +1586,22 @@ main>img {
     justify-content: flex-end;
     min-height: 320px;
     padding: 1rem 1.5rem;
-    width: 47%
+    width: 32%
 }
 
 .sec-relacionamento .cards-dialogo .card:first-child {
-    background: url(./assets/images/home/card-temas-1.png)
+    background: url(./assets/images/home/card-temas-1.jpg)
+}
+
+.sec-relacionamento .cards-dialogo .card.middle {
+    background: url(./assets/images/home/card-temas-2.jpg)
 }
 
 .sec-relacionamento .cards-dialogo .card:last-child {
-    background: url(./assets/images/home/card-temas-2.png)
+    background: url(./assets/images/home/card-temas-3.jpg)
+}
+.sec-relacionamento .cards-dialogo .card:last-child .actions {
+    margin: 0;
 }
 
 .sec-relacionamento .cards-dialogo h4 {
@@ -1724,7 +1732,9 @@ main>img {
 }
 
 .sec-bio h4 {
-    color: #53575c;
+    position: relative;
+    z-index: 3;
+    color: #fff;
     font-family: 'telegraf-bold';
     font-size: 1.5rem;
     margin-bottom: 1rem
@@ -1733,15 +1743,36 @@ main>img {
 .sec-bio .cta.green-old-cta {
     color: #535243
 }
+.sec-bio .cta {
+    position: relative;
+    z-index: 3;
+    border: 2px solid #ffefd9;
+    color: #ffefd9;
+    padding: 0.75rem 2rem;
+}
 
 .sec-bio .card-ambiente {
-    background: url(./assets/images/home/img-biodi.png);
+    position: relative;
+    background-image: url(./assets/images/home/bg-card-ambiente.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     border-radius: 8px;
     min-height: 400px;
     padding: 2.5rem 1.5rem;
-    margin-bottom: 5rem
+    margin-bottom: 5rem;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.sec-bio .card-ambiente:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+
 }
 
 .sec-bio .cta.transparent-cta {
@@ -2351,6 +2382,9 @@ a.link-footer-page {
         background-size: 100%;
         background-repeat: no-repeat
     }
+    .sec-relacionamento_items {
+        display: block;
+    }
     .sec-ambiente {
         min-height: 95vh
     }
@@ -2541,7 +2575,7 @@ a.link-footer-page {
         font-size: 2rem
     }
     .sec-relacionamento {
-        background-size: 260%
+        background-size: 560%
     }
     .sec-relacionamento h2 {
         font-size: 2rem
@@ -2558,8 +2592,18 @@ a.link-footer-page {
     .sec-relacionamento .cards-dialogo .card {
         width: 100%
     }
-    .sec-relacionamento .cards-dialogo .card:first-child {
+    .sec-relacionamento .cards-dialogo .card {
         margin-bottom: 1rem
+    }
+    .sec-relacionamento_items .item {
+        width: 100%;
+    }
+    .card-img {
+        width: 100%;
+        height: auto;
+    }
+    .sec-relacionamento h3 {
+        margin-top: 0;
     }
     .sec-ambiente {
         min-height: 430px;
