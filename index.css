@@ -2251,6 +2251,12 @@ a.link-footer-page {
 }
 
 @media (max-width: 1700px) {
+    .card-flex h4 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 1700px) {
 	.caixa-flutuante {
 	    margin-left: -660px;
 	}
@@ -2279,7 +2285,7 @@ a.link-footer-page {
 
 @media (max-width: 1366px) {
     .banner.banner-home:before {
-        width: 61%;
+        width: 41%;
     }
 }
 
@@ -2315,12 +2321,23 @@ a.link-footer-page {
     }
 }
 
+@media (max-width: 1280px) {
+    .cards-box {
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .card-box {
+        width: 90%;
+        padding: 92px 30px 40px;
+    }
+}
+
 @media (max-width: 1024px) {
     .nav-princ .items-menu {
         width: auto
     }    
     .banner.banner-home:before {
-        width: 61%;
+        width: 41%;
     }
     .sec-inovacao {
         -webkit-box-align: start;
@@ -2386,6 +2403,12 @@ a.link-footer-page {
     .banner.banner-etica,
     .banner.banner-relato {
         background-position: top right
+    }
+    .card-box {
+        width: 100%;
+    }
+    .card-flex {
+        display: block;
     }
 }
 
