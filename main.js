@@ -99,6 +99,16 @@ $('.caixa-flutuante a[href^="#"], .card a[href^="#"]').on('click', function(e) {
 
 
 $(document).ready(function(){
+    $(".menu-hamburguer").click(function () {
+        $(".bg-menu").addClass('ativo');
+    });
+    $(".bg-menu").click(function () {
+        $(".items-menu.ativo, .menu-hamburguer.ativo, .bg-menu.ativo").removeClass('ativo');
+    });
+});
+
+
+$(document).ready(function(){
     $("#open_info").click(function () {
       if ($(".infograficos").hasClass("expanded")) {
         $(".infograficos").removeClass("expanded");

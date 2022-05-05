@@ -340,6 +340,19 @@ a:hover {
     opacity: 1
 }
 
+.bg-menu {
+    display: none;
+    position: fixed;
+    z-index: 9;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.bg-menu.ativo {
+    display: block;
+}
+
 .nav-princ .desc {
     color: #fff;
     font-family: 'telegraf-light'
