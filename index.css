@@ -1338,7 +1338,7 @@ main>img {
     -webkit-box-align: end;
     -ms-flex-align: end;
     align-items: flex-end;
-    background: url(./assets/images/home/bg-inovacao.png) bottom center, linear-gradient(65deg, #202d22 12%, #515151 30%) 0 0px;
+    background: url(./assets/images/home/bg-inovacao.png) bottom center, linear-gradient(65deg, #0c4491 12%, #5e8bce 30%) 0 0px;
     background-repeat: no-repeat;
     background-size: cover;
     display: -webkit-box;
@@ -1373,7 +1373,7 @@ main>img {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    background: linear-gradient(120deg, #202d22 12%, #515151 30%);
+    background: linear-gradient(120deg, #0c4491 12%, #5e8bce 30%);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1402,7 +1402,7 @@ main>img {
 }
 
 .sec-tecnologia h2 {
-    color: #9ddda9;
+    color: #fff;
     font-family: 'telegraf-bold';
     font-size: 2rem;
     font-weight: 700;
@@ -1411,7 +1411,7 @@ main>img {
 }
 
 .sec-tecnologia p {
-    color: #76777a;
+    color: #fff;
     font-size: 1.25rem
 }
 
@@ -1721,9 +1721,9 @@ main>img {
 }
 
 .sec-ambiente {
-    -webkit-box-align: end;
-    -ms-flex-align: end;
-    align-items: flex-end;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     background: url(./assets/images/home/bg-ambiente.png) top center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1742,7 +1742,8 @@ main>img {
     font-family: 'telegraf-bold';
     font-size: 3.75rem;
     line-height: 1;
-    text-transform: uppercase
+    text-transform: uppercase;
+    margin-top: 50px;
 }
 
 .sec-ambiente p {
@@ -1753,6 +1754,11 @@ main>img {
     background: linear-gradient(45deg, #332F19 20%, #5E5E57 60%);
     background-position: 0px 150px;
     background-repeat: no-repeat
+}
+
+.sec-bio-content {
+    margin-top: 40px;
+
 }
 
 .sec-bio h3 {
@@ -1793,6 +1799,11 @@ main>img {
     margin-bottom: 5rem;
     border-radius: 10px;
     overflow: hidden;
+    flex-direction: column; 
+    justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
 }
 
 .sec-bio .card-ambiente:before {
@@ -2267,9 +2278,6 @@ a.link-footer-page {
 }
 
 @media (max-width: 1500px) {
-	.sec-ambiente .actions {
-		margin-bottom: 8rem;
-	}
 	.sec-etica {
 		padding-bottom: 8rem;
 	}
@@ -2366,8 +2374,6 @@ a.link-footer-page {
         height: 90vh
     }
     .sec-ambiente {
-        min-height: 78vh;
-        padding-bottom: 3rem;
         padding-top: 0
     }
     .sec-bio .card-ambiente {
@@ -2386,8 +2392,6 @@ a.link-footer-page {
     .sec-ambiente {
         background: url(./assets/images/home/bg-ambiente.png) top center;
         background-size: cover;
-        min-height: 45vh;
-        padding-bottom: 6rem
     }
     .sec-ambiente h2 {
         font-size: 3rem
@@ -2423,7 +2427,6 @@ a.link-footer-page {
     .sec-ambiente {
         min-height: 37vh;
         height: unset;
-        margin-bottom: 2rem
     }
     .banner.banner-boas-vindas,
     .banner.banner-inovacao,
@@ -2583,9 +2586,6 @@ a.link-footer-page {
     .nav-princ form  {
     	display: none;
     }
-    .sec-ambiente .actions {
-	    margin-bottom: 6rem;
-	}
 }
 
 @media (max-width: 428px) {
@@ -2743,7 +2743,6 @@ a.link-footer-page {
         background-size: cover;
         background-repeat: no-repeat;
         padding-top: 0rem;
-        padding-bottom: 10rem;
         height: 100vh;
     }
     .sec-etica {
