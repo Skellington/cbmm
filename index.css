@@ -691,6 +691,16 @@ table .table-light {
     height: 70vh
 }
 
+.banner.banner-destaque {
+    background: url(./assets/images/inovacao/banner.png) top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 70vh
+}
+
 .banner.banner-gestao {
     background: url(./assets/images/gestao/banner.png) top center;
     background-size: cover;
@@ -1122,6 +1132,13 @@ main>img {
     font-family: 'telegraf-bold';
     font-size: 1.25rem;
     margin: 0
+}
+.caixa-flutuante h3 a {
+    display: block;
+    font-family: 'telegraf-bold';
+    font-size: 1.25rem;
+    color: #fff !important;
+    padding: 0;
 }
 
 .caixa-flutuante ul {
@@ -1945,7 +1962,7 @@ main>img {
 
 .card-box {
     position: relative;
-    width: 580px;
+    width: 100%;
     height: auto;
     padding: 92px 70px 40px;
     clip-path: polygon(0% 0%,100% 0%,100% 0%,100% 90%,96% 100%,4% 100%,0% 91%,0% 11%);
@@ -1999,8 +2016,7 @@ main>img {
 }
 .card-box__content {
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+    align-items: center;
 }
 .card-box__content__info h4 {
     font-family: 'telegraf-bold';
@@ -2036,6 +2052,16 @@ main>img {
     align-items: center;
     flex-direction: column;
     justify-content: center;
+}
+.card-flex {
+    display: flex;
+    justify-content: space-around;
+}
+.card-flex h4 {
+    font-size: 60px;
+}
+.card-box__content__info__number {
+    margin: 0 20px;
 }
 
 footer {
@@ -2510,6 +2536,9 @@ a.link-footer-page {
     }
     #open_info {
         display: none;
+    }
+    .card-flex {
+        display: block;
     }
 }
 

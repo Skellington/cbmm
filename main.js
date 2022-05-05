@@ -86,7 +86,7 @@ document.querySelector(".nav-princ") && (ativaMenu = function() {
 });
 
 $(document).ready(function(){
-$('.caixa-flutuante a[href^="#"]').on('click', function(e) {
+$('.caixa-flutuante a[href^="#"], .card a[href^="#"]').on('click', function(e) {
     e.preventDefault();
     var id = $(this).attr('href'),
         targetOffset = $(id).offset().top;
