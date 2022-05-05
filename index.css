@@ -1279,20 +1279,23 @@ main>img {
 }
 
 .sec-carousel .card-2 {
-    background-image: url(./assets/images/home/card-temas-rel-2.jpg)
+    background-image: url(./assets/images/home/card-temas-rel-2.jpg);
+    background-position: center;
 }
 
 .sec-carousel .card-3 {
-    background-image: url(./assets/images/home/card-temas-rel-3.jpg)
+    background-image: url(./assets/images/home/card-temas-rel-3.jpg);
+    background-position: center;
 }
 
 .sec-carousel .card-4 {
-    background-image: url(./assets/images/home/card-temas-rel-4.jpg)
+    background-image: url(./assets/images/home/card-temas-rel-4.jpg);
+    background-position: center;
 }
 
 .sec-carousel .card-5 {
     background-position: center;
-    background-image: url(./assets/images/home/card-temas-rel-5.jpg)
+    background-image: url(./assets/images/home/card-temas-rel-5.jpg);
 }
 
 .sec-carousel .card {
@@ -1318,7 +1321,8 @@ main>img {
     font-size: 1.25rem;
     font-family: 'telegraf-bold';
     line-height: 1;
-    padding: 0 1.5rem 1rem 1rem
+    padding: 0 1.5rem 1rem 1rem;
+    text-shadow: 1px 1px #000;
 }
 
 .owl-carousel-main.owl-loaded {
@@ -1338,7 +1342,7 @@ main>img {
     -webkit-box-align: end;
     -ms-flex-align: end;
     align-items: flex-end;
-    background: url(./assets/images/home/bg-inovacao.png) bottom center, linear-gradient(65deg, #0c4491 12%, #5e8bce 30%) 0 0px;
+    background: url(./assets/images/home/bg-inovacao.png) top center, linear-gradient(65deg, #0c4491 12%, #5e8bce 30%) 0 0px;
     background-repeat: no-repeat;
     background-size: cover;
     display: -webkit-box;
