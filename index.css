@@ -2115,7 +2115,8 @@ a.link-footer-page {
     left: 50%;
     margin-left: 344px;
 }
-.social-footer h2 {
+.social-footer h2,
+.footer-page .social-footer h2 {
     color: #213769;
     font-size: 12px;
     display: block;
@@ -2158,6 +2159,15 @@ a.link-footer-page {
     background-image: url(assets/images/icons/icons8-linkedin-48.png);
 }
 
+.footer-page {
+    position: relative;
+}
+.footer-page .social-footer {
+    top: 56px;
+    left: inherit;
+    right: 10px;
+    margin-left: 0;
+}
 
 
 .modal {
@@ -2476,6 +2486,10 @@ a.link-footer-page {
     .card-flex {
         display: block;
     }
+
+    .footer-page .social-footer {
+        top: 50px;
+    }
 }
 
 @media (max-width: 1024px) and (min-height: 1366px) {
@@ -2645,6 +2659,9 @@ a.link-footer-page {
         margin-left: 132px;
         top: 93px;
     }
+    .footer-page .social-footer {
+        top: 46px;
+    }   
 }
 
 @media (max-width: 640px) {
@@ -2660,11 +2677,22 @@ a.link-footer-page {
         width: 100%;
         position: relative;
     }
-    .social-footer h2 {
+    .social-footer h2,
+    .footer-page .social-footer h2 {
         text-align: center;
     }
     .social-footer ul {
         justify-content: center;
+    }
+
+    .footer-page a.link-footer-page {
+        top: 59px;
+    }    
+    .footer-page .social-footer {
+        margin-left: 0;
+        top: 0;
+        margin-top: 0;
+        margin-bottom: 20px;
     }
 }
 
